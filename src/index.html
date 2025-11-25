@@ -1,20 +1,20 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>HW5</title>
+    <title>HW7</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="Content">
     <header id="header">
-        <img class="logo" src="../img/Logo.svg" width="40" height="40" alt="logo">
-        <div class="menu">
+        <img class="logo" src="../src/img/Logo.svg" width="40" height="40" alt="logo">
+        <nav class="menu">
             <a class="button" href = "#about">About me</a>
             <a class="button" href = "#education">Education</a>
             <a class="button" href = "#experience">Work experience</a>
             <a class="button" href = "#skills">Skills</a>
             <a class="button" href = "#contacts">Contacts</a>
-        </div>
+        </nav>
     </header>
 
     <section id="about">
@@ -23,7 +23,7 @@
             My name is Alex Smith<br>
             I'm creative front-end developer
         </div>
-        <img class="Image image-about" src="../img/Image_about.png" height="400" alt="about">
+        <img class="Image image-about" src="../src/img/Image_about.png" height="400" alt="about">
     </section>
     <section id="education">
         <div class="education-header">
@@ -67,11 +67,11 @@
         <div class="exp-header">
             Work Experience
         </div>
-        <div class="media-menu">
-            <div class="button">Apple</div>
-            <div class="button">Microsoft</div>
-            <div class="button">Facebook</div>
-        </div>
+        <nav class="media-menu">
+            <button class="button">Apple</button>
+            <button class="button">Microsoft</button>
+            <button class="button">Facebook</button>
+        </nav>
         <div class="experience-text-pic">
             <div class="experience-text">
                 <div class="exp-text-header">
@@ -89,7 +89,7 @@
                     Подсознательно мы пытаемся группировать похожие элементы, распознавать закономерности
                     и таким образом упрощать сложные образы.</p>
             </div>
-            <img class="experience-pic" src="../img/Image_experience.png" width="554" height="400" alt="experience">
+            <img class="experience-pic" src="../src/img/Image_experience.png" width="554" height=png"400" alt="experience">
         </div>
 
     </section>
@@ -157,50 +157,50 @@
                 </div>
             </div>
         </div>
-        <div class="add-new-skill">
+        <form class="add-new-skill">
             <div class="add-new-skill-header">Add new skill</div>
             <div class="add-form">
                 <div class="name-field">
                     <div class="name">Skill name</div>
                     <label>
-                        <input class="form">
+                        <input class="form" type="text" id="skill-name" name="skill-name">
                     </label>
                 </div>
                 <div class="percent-field">
                     <div class="name">Skill proficiency percentage, %</div>
                     <label>
-                        <input class="form">
+                        <input class="form" type="text" id="skill-percentage" name="skill-percentage">
                     </label>
                 </div>
                 <div class="add">
                     <button>Add</button>
                 </div>
             </div>
-        </div>
+        </form>
 
     </section>
     <section id="contacts">
         <div class="contact-header">Contacts</div>
         <div class="contact-line">
             <div class="contact-elem">
-                <img class="contact-pic" src="../img/pin.svg" width="40" height="40" alt="address">
+                <img class="contact-pic" src="../src/img/pin.svg" width="40" height="40" alt="address">
                 <div class="contact-text">
                     <div class="contact-text-header">Address</div>
                     <div class="contact-text-text">16 Lva Tolstogo str., Moscow</div>
                 </div>
             </div>
             <div class="contact-elem">
-                <img class="contact-pic" src="../img/phone%20call.svg" width="40" height="40" alt="phone">
+                <img class="contact-pic" src="../src/img/phone%20call.svg" width="40" height="40" alt="phone">
                 <div class="contact-text">
                     <div class="contact-text-header">Phone</div>
-                    <div class="contact-text-text">+7 (000) 000-00-00</div>
+                    <a class="contact-text-text" href="tel:+70000000000">+7 (000) 000-00-00</a>
                 </div>
             </div>
             <div class="contact-elem">
-                <img class="contact-pic" src="../img/mail.svg" width="40" height="40" alt="mail">
+                <img class="contact-pic" src="../src/img/mail.svg" width="40" height="40" alt="mail">
                 <div class="contact-text">
                     <div class="contact-text-header">E-Mail</div>
-                    <div class="contact-text-text">myemail@yandex.ru</div>
+                    <a class="contact-text-text" href="mailto:myemail@yandex.ru">myemail@yandex.ru</a>
                 </div>
             </div>
         </div>
@@ -209,10 +209,18 @@
     </section>
     <footer id="footer">
         <div class="media-icons">
-            <img src="../img/Instagram.png" width="24" height="24" alt="inst">
-            <img src="../img/Github.png" width="24" height="24" alt="github">
-            <img src="../img/Twitter.png" width="24" height="24" alt="twitter">
-            <img src="../img/Linkedin.png" width="24" height="24" alt="linkedin">
+            <a href="https://www.instagram.com/">
+                <img src="../src/img/Instagram.svg" width="24" height="24" alt="inst">
+            </a>
+            <a href="https://github.com/">
+                <img src="../src/img/Github.svg" width="24" height="24" alt="github">
+            </a>
+            <a href="https://x.com/">
+                <img src="../src/img/Twitter.svg" width="24" height="24" alt="twitter">
+            </a>
+            <a href="https://www.linkedin.com">
+                <img src="../src/img/Linkedin.svg" width="24" height="24" alt="linkedin">
+            </a>
         </div>
         <div class="year">
             © 2023
